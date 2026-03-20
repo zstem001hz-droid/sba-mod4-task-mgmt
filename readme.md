@@ -24,45 +24,44 @@ For this assessment, I am building a Task Management App that allows users to ad
 ![](./screenshot3.jpg)
 
 ## My process
-Began by creating my local folder structure, and creating the taskmgt.html, taskmgt.js, and styles.css files, with my starter code for an initial structure of the app/webpage. 
 
-Once this initial structure was completed I made modifications to the body and container(s) formatting, consistently checking the visual layout after each code change. After desktop version was complete I used dev tools and found the breakpoint at 768 pixels for my 'body' media query, and then I wrote 2 additional media queries to resolve viewpoint inconsistencies. 
-  - **.storage-badge** allows card and bubble elements to stack. 
-  - **.storage-badge::after:** to round out the bottom-right corner of the storage bubble, and restrict the speaaker-triangle from appearing in mobile viewport. 
+Began by creating my local folder structure, and creating the taskmgt.html, taskmgt.js, and styles.css files, with my starter code for an initial structure of the app/webpage. While doing a little research on Task Manager's and to-do lists, I came across a stack overflow article that suggested the use of 'const' over 'let' for variables that do not need to change and some of the comments also suggested that using 'const' also makes the code cleaner and easier to read, so I decided to convert my DOM manipulaation variables from let to 'const' and follow that path going forward.  
 
 ### Built with
 
 - Semantic HTML5 markup
 - Custom CSS
 - javascript
+  - DOM Manipulation
+  - Arrays
+  - Conditionals
+  - 
 - bootstrap's css libraries
 
 ### What I learned
 
-1. Bootstrap impacts css styles by precidence and the bootstrap index on getbootstrap.com's website often populates unexpeceted results compared to the framework library references.
-    - example: setting .bg-primary-subtle did not provide the expected background color.
-    - resolution: bootstrap code had to be refined and removed in some cases, and vice versa if bootstrap contained code I found acceptable for the challence.
-2. Standard CSS can be layered on top of bootstrap utilities. 
-3. CSS pseudo-element
-  - .storage-badge::after
-5. bootstrap utilities can replace flexbox properties, and the way I started this challenge with known CSS code first, made it more difficult than it needed to be. 
+1. Task Manager variables don't need to change. Const makes it easier for other people to read the code. Decided to use Const and 1-to-1 DOM Manipulations. 
 
 ## AI Collaboration
-  - ChatGBT (debugging)
 
+  - ChatGBT (debugging)
 
 ## Author
 
 Zac White
 
-## Acknowledgments
+## Acknowledgmentss
+
+  - [stackoverflow.com](https://stackoverflow.com/questions/41086633/in-javascript-why-should-i-usually-prefer-const-to-let)
   - [getbootstrap](https://getbootstrap.com)
   - [FREEFORMATTER](https://www.freeformatter.com/html-validator.html)
 
- 
- 
 ## Reflections
-1. I faced frustration searching and choosing the correct code to apply and would use my preferred browser or chrome search (both of which have implemented AI components - unavoidable use of AI) and chatGBT to find answers to solve those riddles.  
+
+1. I faced frustration searching and choosing the correct code to apply and would use my preferred browser or chrome search (both of which have implemented AI components - unavoidable use of AI) and chatGBT to find answers to solve those riddles.
+
 2. Bootstrap's precedence (incl. introductory implementation of bootstrap code simulatenaeously with early learning of cutsom CSS styles) can be confusing.
+
 3. Finding conflicting code techniques manually is difficult, online resources for verifying code are very useful.
+
 4. Bootstrap has limitations and presidence on the HTML file, some components, and don't work well when custom CSS style is already assigned.  
