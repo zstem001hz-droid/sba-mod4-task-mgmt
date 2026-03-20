@@ -1,8 +1,12 @@
 // Cache all elements //
 // Find elements in the DOM
 const taskInput = document.getElementById("taskInput");
+const categoryInput = document.getElementById("categoryInput");
+const dealineInput = document.getElementById("deadlineInput");
 const addTaskButton = document.getElementById("addTaskButton");
 const taskList = document.getElementById("taskList");
+const statusFilter = document.getElementById("statusFilter");
+const categoryFilter = document.getElementById("categoryFilter");
 
 // Array to hold variable objects
 let tasks = [];
@@ -24,7 +28,7 @@ addTaskButton.addEventListener("click", function () {
     status: "In Progress"
   };
 
-  tasks.push(newTask); // add (push0 the object to the array
+  tasks.push(newTask); // add (push) the object to the array
   console.log("Tasks array:", tasks); // Inspect the array - test
   taskInput.value = "";
 

@@ -25,7 +25,7 @@ input {
     border-radius: 6px;
 }
 
-#input-area select { /* category button - to match add-task */
+#input-area select { /* category button - style match add-task */
     flex: 1;
     padding: 8px;
     font-size: 1rem;
