@@ -24,11 +24,33 @@
             <option value="Education">Education</option>
         </select>
 
+        <input id="dedlineInput" type="date" />
         <button id="addTaskButton">Add Task</button>
     </div>
 
-    <ul id="taskList"></ul>
+    <!-- FILTERS  -->
+    <div id="filter-area">
+        <label>Status:
+            <select id="statusFilter">
+                <option value="All">All</option>
+                <option value="In Progress">Working...</option>
+                <option value="Complete">Complete</option>
+                <option value="overdue">Warning!</option>
+            </select>
+        </label>
 
+        <label>Category:
+            <select id="categoryFilter">
+                <option value="All">All</option>
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Education"></option>
+            </select>
+        </label>
+    </div>
+
+
+    <ul id="taskList"></ul>
 </body>
 
 </html>
