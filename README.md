@@ -1,4 +1,4 @@
-# SBA Mod 4: Frontend Mentor - Task Management App
+# SBA Mod 4: Task Management App
 
 Building a task manager application with HTML, CSS, and javascript
 
