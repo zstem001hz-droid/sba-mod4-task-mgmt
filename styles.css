@@ -5,6 +5,7 @@
 }
 
 body {
+    background-color: darkgoldenrod;
     font-family: 'Work Sans', sans-serif;
     max-width: 500px;
     margin: 40px auto;
@@ -13,8 +14,18 @@ body {
 
 h1 {
     font-family: 'Work Sans', sans-serif;
-    color: blue;
+    color: brown;
     margin-bottom: 20px;
+}
+
+p {
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 10px;
+}
+
+ul {
+    background-color: white;
 }
 
 #input-area {
@@ -23,27 +34,28 @@ h1 {
     margin-bottom: 16px;
 }
 
-input {
+input {  /* Enter-Task */
     flex: 1;
     padding: 8px;
-    font-size: 1rem;
+    font-size: 10px;
     font-family: 'Work Sans', sans-serif;
-    border: 2px solid gray;
+    border: 2px solid red;
     border-radius: 6px;
 }
 
-#input-area select { /* category button - style match add-task */
+#input-area select { /* category drop-down - style match Enter-Task */
+    font-family: 'Work Sans', sans-serif;
     flex: 1;
     padding: 8px;
-    font-size: 1rem;
-    border: 2px solid gray;
+    font-size: 10px;
+    border: 2px solid red;
     border-radius: 6px;
     min-width: 120px;
 }
 
 button {
     padding: 8px 16px;
-    background: blue;
+    background: darkgreen;
     color: white;
     border: none;
     border-radius: 6px;

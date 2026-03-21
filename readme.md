@@ -27,7 +27,9 @@ For this assessment, I am building a Task Management App that allows users to ad
 
 Began by creating my local folder structure, and creating the taskmgt.html, taskmgt.js, and styles.css files, with my starter code for an initial structure of the app/webpage. While doing a little research on Task Manager's and to-do lists, I came across a stack overflow article that suggested the use of 'const' over 'let' for variables that do not need to change and some of the comments also suggested that using 'const' also makes the code cleaner and easier to read, so I decided to convert my DOM manipulaation variables from let to 'const' and follow that path going forward.
 
-Browsed online resources for agreeable HTML / Javascript code, and after completing the category element, I coded the remaining DOM Cache elements as reference points, which also made formatting the html file easier.
+Browsed online resources, and tutorials for agreeable HTML format & javascript code samples. Populated working category elements mimicking features of taskInput, and changing up the CSS Style. Got stuck on a template literal! 
+
+I coded the remaining DOM Cache elements as reference points, which also made formatting the html file easier.
 
 ### Built with
 
@@ -41,11 +43,17 @@ Browsed online resources for agreeable HTML / Javascript code, and after complet
 
 ### What I learned
 
-1. Task Manager variables don't need to change. Const makes it easier for other people to read the code. Decided to use Const and 1-to-1 DOM Manipulations. 
+  1. Task Manager variables don't need to change. Const makes it easier for other people to read the code. Decided to use Const and 1-to-1 DOM Manipulations.
+
+  2. #.innerHTML / template literals - takes everything between the backticks and stamp it as HTML inside an element.
+
+  3. JavaScript comments inside template literal backticks embed into the code as HTML text, so HTML comments need to be used.
 
 ## AI Collaboration
 
-  - ChatGBT (debugging)
+  - ChatGBT
+    - debugging
+    - A lot of assistance on template literal debug, training, etc.
 
 ## Author
 

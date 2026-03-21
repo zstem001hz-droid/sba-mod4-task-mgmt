@@ -12,10 +12,12 @@
 
 <body>
     <h1>Task List</h1>
+    <p>Complete all fields to add a new task.</p>
 
     <!--INPUT AREA - to add a new task -->
     <div id="input-area">
         <input id="taskInput" type="text" placeholder="Enter a task" />
+        
 
         <!-- Category Selector -->
         <select id="categoryInput">
@@ -25,7 +27,7 @@
             <option value="Education">Education</option>
         </select>
 
-        <input id="dedlineInput" type="date" />
+        <input id="deadlineInput" type="date" />
         <button id="addTaskButton">Add Task</button>
     </div>
 
@@ -45,13 +47,13 @@
                 <option value="All">All</option>
                 <option value="Work">Work</option>
                 <option value="Personal">Personal</option>
-                <option value="Education"></option>
+                <option value="Education">Education</option>
             </select>
         </label>
     </div>
 
 
-    <ul id="taskList"></ul>
+    <br><ul id="taskList"></ul>
 </body>
 
 </html>
