@@ -5,10 +5,16 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Work Sans', sans-serif;
     max-width: 500px;
     margin: 40px auto;
     padding: 0 1rem;
+}
+
+h1 {
+    font-family: 'Work Sans', sans-serif;
+    color: blue;
+    margin-bottom: 20px;
 }
 
 #input-area {
@@ -21,6 +27,7 @@ input {
     flex: 1;
     padding: 8px;
     font-size: 1rem;
+    font-family: 'Work Sans', sans-serif;
     border: 2px solid gray;
     border-radius: 6px;
 }
@@ -36,7 +43,7 @@ input {
 
 button {
     padding: 8px 16px;
-    background: darkcyan;
+    background: blue;
     color: white;
     border: none;
     border-radius: 6px;

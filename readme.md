@@ -27,7 +27,7 @@ For this assessment, I am building a Task Management App that allows users to ad
 
 Began by creating my local folder structure, and creating the taskmgt.html, taskmgt.js, and styles.css files, with my starter code for an initial structure of the app/webpage. While doing a little research on Task Manager's and to-do lists, I came across a stack overflow article that suggested the use of 'const' over 'let' for variables that do not need to change and some of the comments also suggested that using 'const' also makes the code cleaner and easier to read, so I decided to convert my DOM manipulaation variables from let to 'const' and follow that path going forward.
 
-Browsed online resources for agreeable HTML / Javascript code, and after completing the category element, I coded the remaining DOM Cache elements as reference points, which also made formatting the html file easier. 
+Browsed online resources for agreeable HTML / Javascript code, and after completing the category element, I coded the remaining DOM Cache elements as reference points, which also made formatting the html file easier.
 
 ### Built with
 
