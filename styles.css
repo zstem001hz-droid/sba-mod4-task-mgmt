@@ -7,7 +7,7 @@
 body {
     background-color: darkgoldenrod;
     font-family: 'Work Sans', sans-serif;
-    max-width: 500px;
+    max-width: 600px;
     margin: 40px auto;
     padding: 0 1rem;
 }
@@ -16,36 +16,36 @@ h1 {
     font-family: 'Work Sans', sans-serif;
     color: brown;
     margin-bottom: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 p {
     color: black;
     font-family: 'Work Sans', sans-serif;
     margin-bottom: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
-ul {
+/* ul {
     font-family: 'Work Sans', sans-serif;
     color: yellowgreen;
     background-color: rgb(66, 6, 6);
-}
+    border-radius: 6px;
+} */
 
 #input-area {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 16px;
 }
 
-input {  /* Enter-Task */
-    flex: 1;
-    padding: 8px;
-    font-size: 10px;
-    font-family: 'Work Sans', sans-serif;
-    border: 2px solid red;
-    border-radius: 6px;
-}
-
-#input-area select { /* category drop-down - style match Enter-Task */
+#input-area input,
+#input-area select {
     font-family: 'Work Sans', sans-serif;
     flex: 1;
     padding: 8px;
@@ -55,13 +55,38 @@ input {  /* Enter-Task */
     min-width: 120px;
 }
 
+#filter-area {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+#filter-area label { /* status & category */
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#filter-area select {
+    padding: 6px;
+    border: 1px solid red;
+    border-radius: 6px;
+    font-size: 0.8rem;
+}
+
 button {
     padding: 8px 16px;
-    background: darkgreen;
+    background: gray;
     color: white;
-    border: none;
+    border: solid green;
     border-radius: 6px;
-    cursor: pointer;
+    cursor: pointer; /* displays hand cursor */
+}
+
+button:hover {
+    background: green;
 }
 
 /* Task List */
@@ -71,15 +96,18 @@ button {
     padding: 0;
 }
 
-.task-item {
+.task-item { /* also <ul> style */
+    font-family: 'Work Sans', sans-serif;
     display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    border: 1px solid lightblue;
+    flex-direction: column;
+    background: beige;
+    color: darkblue;
+    gap: 6px;
+    padding: 12px;
+    border: 1px solid red;
     border-radius: 6px;
-    margin-bottom: 8px;
-    cursor: pointer; /* Hand cursor as pointer when hovering */
+    margin-bottom: 10px;
+    cursor: pointer; /* Hand pointer when hovering */
 }
 
 .task-item.done span {

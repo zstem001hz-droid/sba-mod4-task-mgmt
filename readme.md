@@ -50,7 +50,7 @@ Got stuck on a javascript and template literals, debugged and asked for assistan
 
   4. initial starter code conflicts with renderTasks() array.
     - removed create and display tasks, addTaskButton starter code.
-    - Removed eventListener starter code. 
+    - Removed eventListener starter code.
 
 ## AI Collaboration
 
