@@ -97,18 +97,3 @@ addTaskButton.addEventListener("click", function () {
   taskInput.value = "";
   categoryInput.value = "";
   deadlineInput.value = "";
-
-  // Create and Display tasks
-  const listItem = document.createElement("li");
-  listItem.innerText = taskName;
-
-  taskList.appendChild(listItem);
-  taskInput.value = ""; // Clear the input field
-});
-
-// Add event listener to the task items to allow user's to delete them
-taskList.addEventListener("click", function (event) {
-  if (event.target.tagName === "LI") {
-    taskList.removeChild(event.target);
-  }
-});

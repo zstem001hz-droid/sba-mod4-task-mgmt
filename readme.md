@@ -29,9 +29,7 @@ Began by creating my local folder structure, and creating the taskmgt.html, task
 
 Browsed online resources, and tutorials for agreeable HTML format & javascript code samples. Populated working category elements mimicking features of taskInput, and changing up the CSS Style. I coded the remaining DOM Cache elements as reference points, which also made formatting the html file easier.
 
-Got stuck on a javascript and template literals, debugged and asked for assistance moving forward from ChatGBT.  
-
-
+Got stuck on a javascript and template literals, debugged and asked for assistance moving forward from ChatGBT.
 
 ### Built with
 
@@ -41,7 +39,6 @@ Got stuck on a javascript and template literals, debugged and asked for assistan
   - DOM Manipulation
   - Arrays
   - Conditionals
-- bootstrap's css libraries
 
 ### What I learned
 
@@ -50,6 +47,10 @@ Got stuck on a javascript and template literals, debugged and asked for assistan
   2. #.innerHTML / template literals - takes everything between the backticks and stamp it as HTML inside an element.
 
   3. JavaScript comments inside template literal backticks embed into the code as HTML text, so HTML comments need to be used.
+
+  4. initial starter code conflicts with renderTasks() array.
+    - removed create and display tasks, addTaskButton starter code.
+    - Removed eventListener starter code. 
 
 ## AI Collaboration
 
