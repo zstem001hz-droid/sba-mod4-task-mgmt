@@ -97,3 +97,5 @@ addTaskButton.addEventListener("click", function () {
   taskInput.value = "";
   categoryInput.value = "";
   deadlineInput.value = "";
+
+  });
