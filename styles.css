@@ -25,7 +25,9 @@ p {
 }
 
 ul {
-    background-color: white;
+    font-family: 'Work Sans', sans-serif;
+    color: yellowgreen;
+    background-color: rgb(66, 6, 6);
 }
 
 #input-area {

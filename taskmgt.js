@@ -2,7 +2,7 @@
 // Find elements in the DOM
 const taskInput = document.getElementById("taskInput");
 const categoryInput = document.getElementById("categoryInput");
-const dealineInput = document.getElementById("deadlineInput");
+const deadlineInput = document.getElementById("deadlineInput");
 const addTaskButton = document.getElementById("addTaskButton");
 const taskList = document.getElementById("taskList");
 const statusFilter = document.getElementById("statusFilter");
@@ -11,17 +11,33 @@ const categoryFilter = document.getElementById("categoryFilter");
 // Array to hold variable objects
 let tasks = [];
 
+function checkOverdue() {
+  const today = new Date();    // Today's date and time
+  today.setHours(0, 0, 0, 0);  // Midnight counter
+
+  tasks.forEach(function(task) {
+    // Only flag tasks that are not already completed
+    if (task.status !== "Completed") {
+      const deadline = new Date(task.deadline); // Convert the date string to a Date object (overdue!)
+      if (deadline < today) {
+        task.status = "Overdue";
+      }
+    }
+  });
+}
+
 // Draw the task list from the array
 function renderTasks() {
-  taskList.innerHtml = "";  // Wipe task list
+  checkOverdue();
+  taskList.innerHTML = "";  // Wipe task list
 
-  tasks.forEach(function (task) {
+  tasks.forEach(function (task, index) {
     const li = document.createElement("li"); // create a new list item
     li.className = "task-item";
 
-    // Template literal - Takes everything between the backticks and stamps it as HTML inside the <li>
+    // Template literal - Takes everything between the backticks and stamps it as HTML inside the <li> 
     li.innerHTML = `
-<span class="task-name">${task.name}</span> <!-- task name -->
+<span class="task-name">${task.name}</span>
 <span class="task-meta">Category: ${task.category} | Deadline: ${task.deadline}</span>
 <div class="task-actions">
 <span class="task-status">Status: ${task.status}</span>
@@ -75,7 +91,9 @@ addTaskButton.addEventListener("click", function () {
   };
 
   tasks.push(newTask); // add (push) the object to the array
+  renderTasks();
   console.log("Tasks array:", tasks); // Inspect the array - test
+
   taskInput.value = "";
   categoryInput.value = "";
   deadlineInput.value = "";
