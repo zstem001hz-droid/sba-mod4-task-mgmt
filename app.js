@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Tasks array:", tasks); // Inspect the array - test
 
     taskInput.value = "";
-    categoryInput.value = "";
+    categoryInput.selectedIndex = 0;
     deadlineInput.value = "";
   });
 
