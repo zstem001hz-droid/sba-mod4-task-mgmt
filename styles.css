@@ -30,13 +30,6 @@ p {
     justify-content: center;
 }
 
-/* ul {
-    font-family: 'Work Sans', sans-serif;
-    color: yellowgreen;
-    background-color: rgb(66, 6, 6);
-    border-radius: 6px;
-} */
-
 #input-area {
     display: flex;
     flex-wrap: wrap;
@@ -76,18 +69,16 @@ p {
     font-size: 0.8rem;
 }
 
-button {
+#addTaskButton {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.85rem;
+    background: lightgreen;
+    color: black;
     padding: 8px 16px;
-    background: gray;
-    color: white;
-    border: solid green;
+    border: 1px solid darkgreen;
     border-radius: 6px;
     cursor: pointer; /* displays hand cursor */
-}
-
-button:hover {
-    background: green;
-}
+} 
 
 /* Task List */
 
@@ -97,27 +88,73 @@ button:hover {
 }
 
 .task-item { /* also <ul> style */
-    font-family: 'Work Sans', sans-serif;
     display: flex;
     flex-direction: column;
     background: beige;
-    color: darkblue;
     gap: 6px;
     padding: 12px;
-    border: 1px solid red;
+    border: 1px solid sienna;
     border-radius: 6px;
     margin-bottom: 10px;
-    cursor: pointer; /* Hand pointer when hovering */
 }
 
-.task-item.done span {
-    text-decoration: line-through;
-    color: red;
+.task-item .task-name { /* task name title */
+    font-family: 'Times New Roman', Times, serif;
+    color: darkblue;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
-.task-item button {
+.task-item .task-meta {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.85rem;
+    color: gray;
+    cursor: pointer; /* displays hand cursor */
+}
+
+.task-item .task-actions {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.status-badge {
+    font-family: 'Work Sans', sans-serif;
+    padding: 3px 10px;
+    border-radius:12px;
+    border: 1px solid black;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+}
+
+.status-inprogress {
+    background-color: slateblue;
+}
+
+.status-completed {
+    background-color: green;
+}
+
+.status-overdue {
+    background-color: crimson;
+}
+
+.task-item .delete-btn {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.85rem;
+    background: crimson;
     margin-left: auto;
-    background: green;
-    padding: 4px 10px;
-    font-size: .85rem;
+    padding: 8px 16px;
+    color: white;
+    border: 1px solid sienna;
+    border-radius: 6px;
+    cursor: pointer; /* displays hand cursor */
+} 
+
+.task-item .delete-btn:hover {
+    background: darkred;
 }

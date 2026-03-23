@@ -19,9 +19,7 @@ For this assessment, I am building a Task Management App that allows users to ad
 
 ### Screenshots
 
-![](./screenshot.jpg)
-![](./screenshot2.jpg)
-![](./screenshot3.jpg)
+  - Screenshots: **Possibly**, to be submitted at a later date. 
 
 ## My process
 
@@ -51,12 +49,14 @@ Got stuck on a javascript and template literals, debugged and asked for assistan
   4. initial starter code conflicts with renderTasks() array.
     - removed create and display tasks, addTaskButton starter code.
     - Removed eventListener starter code.
+  
+  5. Don't get distracted by style when writing javascript. 
 
 ## AI Collaboration
 
   - ChatGBT
     - debugging
-    - A lot of assistance on template literal debug, training, etc.
+    - Assistance on template literals, CSS Style concepts, and javascript.
 
 ## Author
 
@@ -64,16 +64,20 @@ Zac White
 
 ## Acknowledgmentss
 
+  - [developer.mozilla.org](https://developer.mozilla.org/en-US/)
   - [stackoverflow.com](https://stackoverflow.com/questions/41086633/in-javascript-why-should-i-usually-prefer-const-to-let)
-  - [getbootstrap](https://getbootstrap.com)
+  - [dev.to](https://dev.to/codehuntersharath/how-to-build-a-todo-list-app-using-html-css-and-javascript-4mg6)
+  - [youtube.com](https://www.youtube.com/@TraversyMedia/search?query=DOM%20crash) Traversy Media
   - [FREEFORMATTER](https://www.freeformatter.com/html-validator.html)
 
 ## Reflections
 
-1. I faced frustration searching and choosing the correct code to apply and would use my preferred browser or chrome search (both of which have implemented AI components - unavoidable use of AI) and chatGBT to find answers to solve those riddles.
+    - Most of my relection informatin regarding this lab/assessment is already listed in the "What I learned" section of this readme.md file. 
+    
+    - Javascript is a complicated language to code to apply and being a novice to coding I had to read a considerable amount of material and get assistance from AI to explain the fundamentals, and assist me with generating code values and debugging.
 
-2. Bootstrap's precedence (incl. introductory implementation of bootstrap code simulatenaeously with early learning of cutsom CSS styles) can be confusing.
+    - by completing this assessment, I have come to the conclusion that this app is just the beginning of something I would like to make better, although there are a lot of task manager, to-do list apps already out there, creating this one from scratch was a good learning experience, and improved what I know about html, css, and most specifically javascript.
 
-3. Finding conflicting code techniques manually is difficult, online resources for verifying code are very useful.
+    - Upon completion, I believe I spent too much time on details I should have completed after getting the javascript structure to work.
 
-4. Bootstrap has limitations and presidence on the HTML file, some components, and don't work well when custom CSS style is already assigned.  
+    - This is a project I will continue to work on in the future.
