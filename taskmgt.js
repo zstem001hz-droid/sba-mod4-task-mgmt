@@ -67,7 +67,7 @@ function renderTasks() {
         <option value="In Progress" ${task.status === "In Progress" ? "selected" : ""}>In Progress</option>
         <option value="Completed" ${task.status === "Completed" ? "selected" : ""}>Completed</option>
       </select>
-      <button class="delete-btn" data-index=${index}">Delete</button>
+      <button class="delete-btn" data-index="${index}">Delete</button>
   </div>
 `;
 
