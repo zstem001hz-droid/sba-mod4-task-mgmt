@@ -41,7 +41,7 @@ function renderTasks() {
   });
 
   if (filtered.length === 0) {
-    taskList.innerHTML = "<li style='color: gray; padding: 10px'>No tasks found.</li>";
+    taskList.innerHTML = "<li style='background: beige; color: green; display: flex; align-items: center; justify-content: center; padding: 10px'>No tasks found.</li>";
     return;
   }
 
