@@ -85,7 +85,7 @@ taskList.addEventListener("change", function (event) {
 });
 
 // Delete-btn event listeener
-taskList.addEventListener("click", function(event) {
+taskList.addEventListener("click", function (event) {
   if (event.target.classList.contains("delete-btn")) {
     const index = parseInt(event.target.dataset.index);
     tasks.splice(index, 1);
