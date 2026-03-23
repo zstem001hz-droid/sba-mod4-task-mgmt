@@ -69,6 +69,7 @@ Zac White
   - [dev.to](https://dev.to/codehuntersharath/how-to-build-a-todo-list-app-using-html-css-and-javascript-4mg6)
   - [youtube.com](https://www.youtube.com/@TraversyMedia/search?query=DOM%20crash) Traversy Media
   - [FREEFORMATTER](https://www.freeformatter.com/html-validator.html)
+  - [jshint.com](https://jshint.com/) 
 
 ## Reflections
 

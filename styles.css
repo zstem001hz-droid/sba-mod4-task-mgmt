@@ -55,7 +55,8 @@ p {
     flex-wrap: wrap;
 }
 
-#filter-area label { /* status & category */
+#filter-area label {
+    /* status & category */
     font-size: 0.8rem;
     display: flex;
     flex-direction: column;
@@ -77,17 +78,22 @@ p {
     padding: 8px 16px;
     border: 1px solid darkgreen;
     border-radius: 6px;
-    cursor: pointer; /* displays hand cursor */
-} 
+    cursor: pointer;
+    /* displays hand cursor */
+}
 
 /* Task List */
 
 #taskList {
+    width: 100%;
     list-style: none;
     padding: 0;
+    overflow-x: hidden;
+    /* Prevents horizontal scrolling */
 }
 
-.task-item { /* also <ul> style */
+.task-item {
+    /* also <ul> style */
     display: flex;
     flex-direction: column;
     background: beige;
@@ -96,9 +102,12 @@ p {
     border: 1px solid sienna;
     border-radius: 6px;
     margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 100%;
 }
 
-.task-item .task-name { /* task name title */
+.task-item .task-name {
+    /* task name title */
     font-family: 'Times New Roman', Times, serif;
     color: darkblue;
     font-weight: bold;
@@ -109,7 +118,8 @@ p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 0.85rem;
     color: gray;
-    cursor: pointer; /* displays hand cursor */
+    cursor: pointer;
+    /* displays hand cursor */
 }
 
 .task-item .task-actions {
@@ -123,7 +133,7 @@ p {
 .status-badge {
     font-family: 'Work Sans', sans-serif;
     padding: 3px 10px;
-    border-radius:12px;
+    border-radius: 12px;
     border: 1px solid black;
     font-size: 0.8rem;
     font-weight: bold;
@@ -152,9 +162,65 @@ p {
     color: white;
     border: 1px solid sienna;
     border-radius: 6px;
-    cursor: pointer; /* displays hand cursor */
-} 
+    cursor: pointer;
+    /* displays hand cursor */
+}
 
 .task-item .delete-btn:hover {
     background: darkred;
+}
+
+@media (max-width: 480px) {
+    #input-area {
+        flex-direction: column;
+    }
+
+    #input-area input,
+    #input-area select,
+    #input-area button {
+        width: 100%;
+        min-width: unset;
+    }
+
+    #filter-area {
+        flex-direction: column;
+    }
+
+    .task-item .task-actions {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .task-item .delete-btn {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .task-item {
+        padding: 10px;
+        font-size: 0.85rem;
+        word-break: break-word;
+    }
+
+    .task-item .task-name {
+        font-size: 0.95rem;
+    }
+
+    .task-item .task-meta {
+        font-size: 0.75rem;
+        white-space: normal;
+        /* allows word wrap */
+        word-break: break-word;
+    }
+
+    .status-badge {
+        font-size: 0.75rem;
+        padding: 2px 8px;
+    }
+
+    .task-item select {
+        width: 100%;
+        font-size: 0.85rem;
+    }
 }
