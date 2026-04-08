@@ -54,7 +54,7 @@ Got stuck on a javascript and template literals, debugged and asked for assistan
 
 ## AI Collaboration
 
-  - ChatGBT
+  - ChatGPT
     - debugging
     - Assistance on template literals, CSS Style concepts, and javascript.
 
